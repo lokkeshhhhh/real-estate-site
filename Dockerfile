@@ -46,7 +46,7 @@ RUN mkdir -p \
 
 RUN chmod -R 775 storage bootstrap/cache
 
-RUN php artisan package:discover --ansi
+
 
 EXPOSE 10000
 
