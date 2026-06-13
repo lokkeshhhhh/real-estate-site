@@ -1,6 +1,6 @@
 FROM php:8.3-cli
 
-# Install OS packages and PHP extensions required by Laravel
+# Install system dependencies + Laravel required PHP extensions
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     libicu-dev \
+    libcurl4-openssl-dev \
     && docker-php-ext-install \
     zip \
     mbstring \
@@ -20,6 +21,7 @@ RUN apt-get update && apt-get install -y \
     intl \
     pdo \
     pdo_mysql \
+    curl \
     opcache \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -27,35 +29,37 @@ RUN apt-get update && apt-get install -y \
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Application directory
+# Set working directory
 WORKDIR /var/www/html
 
-# Copy application files
+# Copy Laravel project
 COPY . .
 
-# Install Laravel dependencies
-# --no-scripts prevents artisan commands from running during docker build
+# Check PHP environment (helpful in Render logs)
+RUN php -v && php -m
+
+# Install dependencies
 RUN composer install \
     --no-dev \
     --optimize-autoloader \
     --no-interaction \
     --no-scripts
 
-# Create Laravel required folders if missing
+# Create required Laravel directories
 RUN mkdir -p \
     storage/framework/cache \
     storage/framework/sessions \
     storage/framework/views \
     bootstrap/cache
 
-# Set permissions
+# Permissions
 RUN chmod -R 775 storage bootstrap/cache
 
-# Now run Laravel composer scripts safely
+# Laravel package discovery
 RUN php artisan package:discover --ansi
 
-# Expose Render port
+# Render listens here
 EXPOSE 10000
 
-# Start Laravel
+# Start Laravel server
 CMD php artisan serve --host=0.0.0.0 --port=${PORT:-10000}
