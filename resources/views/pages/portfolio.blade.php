@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Completed Deals - Portfolio')
+@section('title', 'Nestora | Completed Deals - Portfolio')
+
+@section('favicon')
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M20 40h60v40H20zM35 40V25h30v15' fill='none' stroke='%23B5882A' stroke-width='8'/></svg>">
+@endsection
 
 @section('content')
 
@@ -57,7 +61,7 @@
                     <div class="pt-4 border-t border-gray-100 flex justify-between items-center text-sm font-medium">
                         <span class="text-navy flex items-center gap-1">
                             <svg class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
-                            {{ $deal['area_sqft'] }} sqft
+                            {{ $deal['area'] ?? $deal['area_sqft'] . ' sqft' }}
                         </span>
                         <span class="text-gold">{{ $deal['deal_value'] }}</span>
                     </div>

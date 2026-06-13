@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Legal Essentials for Property Buyers')
+@section('title', 'Nestora | Legal Essentials for Property Buyers')
+
+@section('favicon')
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 20l30 15v25c0 20-30 35-30 35S20 80 20 60V35z' fill='none' stroke='%23B5882A' stroke-width='8'/></svg>">
+@endsection
 
 @section('content')
 

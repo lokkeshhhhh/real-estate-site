@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - Inquire Now')
+@section('title', 'Nestora | Contact - Inquire Now')
+
+@section('favicon')
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M65 75c-15 0-35-20-35-35 0-5 5-10 10-10l10 15-5 5c5 10 15 15 20 15l5-5 15 10-10 10c-3 5-7 5-10 5z' fill='%23B5882A'/></svg>">
+@endsection
 
 @section('content')
 

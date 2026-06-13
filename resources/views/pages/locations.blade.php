@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Locations We Serve')
+@section('title', 'Nestora | Locations We Serve')
+
+@section('favicon')
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 85c0 0 25-35 25-50a25 25 0 0 0-50 0c0 15 25 50 25 50z' fill='none' stroke='%23B5882A' stroke-width='8'/><circle cx='50' cy='35' r='10' fill='%23B5882A'/></svg>">
+@endsection
 
 @section('content')
 

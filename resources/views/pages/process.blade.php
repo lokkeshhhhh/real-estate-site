@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Property Buying Process in India')
+@section('title', 'Nestora | Property Buying Process in India')
+
+@section('favicon')
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M40 30h30m-30 20h30m-30 20h30M25 30h5m-5 20h5m-5 20h5' stroke='%23B5882A' stroke-width='8' stroke-linecap='round'/></svg>">
+@endsection
 
 @section('content')
 
@@ -142,7 +146,7 @@
 </section>
 
 <!-- CTA Sections -->
-<section class="py-16 bg-white border-t border-gray-100">
+<!-- <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-2xl font-serif font-bold text-navy mb-6">Need a handy reference?</h2>
         <a href="{{ asset('assets/checklist.pdf') }}" target="_blank" class="inline-flex items-center gap-2 px-8 py-3 bg-white border-2 border-gold text-navy font-bold uppercase tracking-wider rounded hover:bg-gold transition shadow-sm">
@@ -151,7 +155,7 @@
         </a>
         <p class="text-xs text-gray-400 mt-3">* PDF coming soon</p>
     </div>
-</section>
+</section> -->
 
 <section class="bg-navy py-16 text-center">
     <div class="max-w-4xl mx-auto px-4">

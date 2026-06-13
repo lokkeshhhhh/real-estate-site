@@ -1,4 +1,4 @@
-<footer class="bg-navy text-gray-400 py-12 border-t border-gray-800 mt-20">
+<footer class="bg-navy text-gray-400 py-12 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="col-span-1 md:col-span-2">
             <div class="mb-6">
@@ -58,8 +58,34 @@
             </ul>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm flex flex-col md:flex-row justify-between items-center">
-        <p>&copy; {{ date('Y') }} Nestora. All rights reserved.</p>
-        <p class="mt-2 md:mt-0">Rohit Kumawat | <abbr title="Real Estate Regulatory Authority Registration">RERA</abbr> Reg. No.: RAJ/A/2025/16444 | Serving Rajasthan & Maharashtra</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm flex flex-col space-y-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; {{ date('Y') }} Nestora. All rights reserved.</p>
+            <p class="mt-2 md:mt-0 text-center md:text-right">Rohit Kumawat | <abbr title="Real Estate Regulatory Authority Registration">RERA</abbr> Reg. No.: RAJ/A/2025/16444 <br class="md:hidden"> Serving Rajasthan & Maharashtra</p>
+        </div>
+        
+        <div class="border-t border-gray-800/50 pt-6 flex flex-col items-center justify-center space-y-3">
+            <p class="text-xs text-gray-400">
+                Developed and Maintained by <span class="font-mono font-bold text-gray-300 text-sm tracking-wide">Lokesh Kumawat</span>
+            </p>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/lokkeshhhhh" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gold transition">
+                    <span class="sr-only">Instagram</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <circle cx="12" cy="12" r="4"/>
+                      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/lokkeshhhhh" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gold transition">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                      <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                      <rect x="2" y="9" width="4" height="12"/>
+                      <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
 </footer>

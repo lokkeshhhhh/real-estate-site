@@ -12,6 +12,13 @@
     <meta property="og:site_name" content="Nestora">
     <meta name="robots" content="index, follow">
 
+    <!-- Favicon -->
+    @hasSection('favicon')
+        @yield('favicon')
+    @else
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='50%' font-family='serif' font-size='65' font-weight='bold' fill='%23B5882A' text-anchor='middle' dy='.35em'>N</text></svg>">
+    @endif
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

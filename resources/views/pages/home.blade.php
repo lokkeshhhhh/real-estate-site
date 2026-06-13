@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Nestora | Home')
 
 @section('content')
 
@@ -35,7 +35,7 @@
             Your Trusted Guide to Buying Property Across India's Best Markets
         </h1>
         <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-sans">
-            From JDA-approved plots in Jaipur to prime addresses in Navi Mumbai — Rohit Kumawat helps you find, verify, and close the right property.
+            From JDA-approved plots in Jaipur to prime addresses in Navi Mumbai — we help you find, verify, and close the right property.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 mb-16">
@@ -59,7 +59,7 @@
             </div>
             <div class="flex items-center gap-2">
                 <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                Serving Jaipur · Kota · Ajmer · Mumbai
+                Serving:- Jaipur| Kota | Ajmer | Mumbai
             </div>
         </div>
     </div>
@@ -374,12 +374,12 @@
             <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 relative">
                 <svg class="absolute top-6 left-6 w-12 h-12 text-sand opacity-30" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
                 <div class="relative z-10 pl-6 pt-6">
-                    <p class="text-gray-600 mb-6 font-medium leading-relaxed">"The entire process was incredibly smooth. They helped us identify the perfect 3BHK in Jaipur, negotiated the price, and walked us through the entire legal paperwork without any stress."</p>
+                    <p class="text-gray-600 mb-6 font-medium leading-relaxed">"The entire process was incredibly smooth. They helped us identify the perfect commercial property in Jaipur and walked us through the entire legal paperwork without any stress."</p>
                     <div class="flex items-center">
                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Client" class="w-12 h-12 rounded-full mr-4 border-2 border-gold">
                         <div>
                             <h4 class="font-bold text-navy text-sm uppercase">Rajesh Kumar</h4>
-                            <p class="text-xs text-gray-500">Bought Residential, Jaipur</p>
+                            <p class="text-xs text-gray-500">Bought Commercial, Jaipur</p>
                         </div>
                     </div>
                 </div>

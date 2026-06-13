@@ -1,6 +1,7 @@
 <?php
 
 return [
+    /*
     [
         'id' => 1,
         'title' => 'Premium Corner Plot',
@@ -89,4 +90,72 @@ return [
         'image_url' => 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80',
         'description' => 'High ROI commercial property catering to the student population.',
     ]
+    */
+
+    [
+        'id' => 9,
+        'title' => 'Commercial Plot',
+        'city' => 'Jaipur',
+        'type' => 'Plot',
+        'area' => '111 sqr yard',
+        'deal_value' => '30 Lakhs',
+        'completion_year' => date('Y'),
+        'image_url' => 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=600&q=80&fit=crop&auto=format',
+        'description' => 'Prime commercial plot located on Tonk Road.',
+    ],
+    [
+        'id' => 10,
+        'title' => 'Residential Plot',
+        'city' => 'Jaipur',
+        'type' => 'Plot',
+        'area' => '152 sqr yard',
+        'deal_value' => '35 Lakhs',
+        'completion_year' => date('Y'),
+        'image_url' => 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80',
+        'description' => 'A beautiful residential plot in Jaipur.',
+    ],
+    [
+        'id' => 11,
+        'title' => 'Residential Plot',
+        'city' => 'Ajmer',
+        'type' => 'Plot',
+        'area' => '200 sqr yard',
+        'deal_value' => '19 Lakhs',
+        'completion_year' => date('Y'),
+        'image_url' => 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80',
+        'description' => 'Spacious residential plot located in a peaceful area of Ajmer.',
+    ],
+    [
+        'id' => 12,
+        'title' => 'Residential Plot',
+        'city' => 'Jaipur',
+        'type' => 'Plot',
+        'area' => '111 sqr yard',
+        'deal_value' => '30 Lakhs',
+        'completion_year' => date('Y'),
+        'image_url' => 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80',
+        'description' => 'Perfect sized residential plot in a prime locality of Jaipur.',
+    ],
+    [
+        'id' => 13,
+        'title' => 'Residential Plot',
+        'city' => 'Jaipur',
+        'type' => 'Plot',
+        'area' => '250 sqr yard',
+        'deal_value' => '60 Lakhs',
+        'completion_year' => date('Y'),
+        'image_url' => 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80',
+        'description' => 'Premium residential plot near Mahindra SEZ.',
+    ],
+    [
+        'id' => 14,
+        'title' => 'Premium Plot',
+        'city' => 'Jaipur',
+        'type' => 'Plot',
+        'area' => '500 sqr yard',
+        'deal_value' => '1.6 Cr',
+        'completion_year' => date('Y'),
+        'image_url' => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80',
+        'description' => 'Large 500 sqr yard plot perfect for building a grand residence or for investment.',
+    ],
 ];
