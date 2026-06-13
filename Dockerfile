@@ -35,7 +35,6 @@ RUN composer install \
     --optimize-autoloader \
     --no-interaction \
     --no-scripts \
-    --ignore-platform-reqs \
     -vvv
 
 RUN mkdir -p \
@@ -46,7 +45,7 @@ RUN mkdir -p \
 
 RUN chmod -R 775 storage bootstrap/cache
 
-
+RUN php artisan package:discover --ansi
 
 EXPOSE 10000
 
