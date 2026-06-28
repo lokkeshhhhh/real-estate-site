@@ -5,6 +5,12 @@ use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/tets-cron', function () {
+    return response()->json([
+        'message' => 'success',
+    ]);
+});
+
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/portfolio', [PageController::class, 'portfolio'])->name('portfolio');
 Route::get('/process', [PageController::class, 'process'])->name('process');
